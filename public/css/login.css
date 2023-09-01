@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+body {
+  background: #ecf0f1;
+  font-family: "Quicksand";
+}
+
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.wrapper {
+  width: 35%;
+  background-color: white;
+  margin: 20% auto;
+  padding: 0 20px 20px 20px;
+}
+
+.logo-link {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.logo-img {
+  width: 120px;
+}
+
+.form-password {
+  position: relative;
+}
+
+.eye {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+}
+
+.login-error {
+  font-weight: 700;
+  color: #fc5c65;
+}
+
+@media all and (max-width: 992px) {
+  .wrapper {
+    width: 45%;
+  }
+}
+@media all and (max-width: 768px) {
+  .wrapper {
+    width: 50%;
+  }
+}
+@media all and (max-width: 650px) {
+  .wrapper {
+    width: 60%;
+  }
+}
+@media all and (max-width: 576px) {
+  .wrapper {
+    width: 70%;
+  }
+}
+@media all and (max-width: 500px) {
+  .wrapper {
+    width: 85%;
+  }
+}
+
+/*# sourceMappingURL=login.css.map */

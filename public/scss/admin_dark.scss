@@ -1,0 +1,193 @@
+$background: #263238;
+$color: #CFD8DC;
+$primary: #1563b1;
+$secondary: #4bc2f2;
+$danger: #fc5c65;
+$success: #1abc9c;
+
+.dark{
+    *{
+        scrollbar-color: darken($color,40) transparent;
+    }
+    *::-webkit-scrollbar-thumb {
+        background-color: darken($color,40);
+    }
+    .bg-theme{
+        background-color: $background;
+    }
+    .backdrop{
+        background-color: rgba(0,0,0,.3);
+    }
+    input::placeholder{
+        color: lighten($background, 25) !important;
+    }
+    tr {
+        border-color: darken($color, 40);
+    }
+    td {
+        color : $color;
+    }
+    .modal-header {
+        border-bottom: 1px solid lighten($background, 10) !important;
+    }
+    .modal-footer {
+        border-top: 1px solid lighten($background, 10) !important;
+    }
+    .page-link {
+        color: $color;
+        &:hover{
+            color: darken($color, 20);
+        }
+    }
+    .pagination {
+        --bs-pagination-bg: #34495e;
+        --bs-pagination-border-color: #dee2e6;
+        --bs-pagination-hover-bg: transparent;
+        
+        .active>.page-link, .page-link.active{
+            border-color: $color;
+            color: $color !important;
+        }
+    }
+    .mode-menu {
+        background-color: rgba(255,255,255,.075);
+        color: $color;
+    }
+    .msg-menu {
+        ._badge{
+            border: 1px solid $background;
+        }
+    }
+    .profil-menu {
+        background-color: rgba(255,255,255,.075);
+        border: 1px solid $color;
+        color: $color;
+    }
+    .sidebar-title{
+        color: darken($color,35);
+        .line{
+            border-top: 1px solid darken($color,55);
+        }
+    }
+    .sidebar-link {
+        color: darken($color,15);
+        &:hover{
+            color: lighten($color,10);
+        }
+        &.active{
+            color: lighten($color, 40);
+            font-weight: 700;
+        }
+    }
+    .form-container{
+        background-color: lighten($background, 3);
+    }
+    .form-title{
+        background-color: darken($background, 3);;
+    }
+    .form-control {
+        background-color: transparent;
+        border-color: darken($color, 40);
+        color: $color;
+        &:focus {
+            border-color: $secondary;
+        }
+    }
+    .form-table{
+        thead{
+            color: $color;
+        }
+    }
+    .table-sticky{
+        thead{
+            background-color: lighten($background, 3);
+        }
+        tbody tr:nth-child(even){
+            background-color: lighten($background, 8);
+        }
+    }
+    .btn-search{
+        background-color: $background;
+        color: $color;
+    }
+    .modal-content {
+        background-color: $background !important;
+    }
+    .messenger {
+        background-color: $background;
+    }
+    .messenger-header, .messenger-body {
+        border-bottom: 1px solid lighten($background, 10);
+    }
+    .messenger-icon.send {
+        color: $color;
+    }
+    .message-panel {
+        &.left {
+            border-right: 3px solid lighten($background, 10);
+        }
+        &.right {
+            border-left: 3px solid lighten($background, 10);
+        }
+        .center-header, .center-body, .side-header {
+            border-bottom: 2px solid lighten($background, 10);
+        }
+        .user-list:hover {
+            background-color: lighten($background, 10);
+        }
+    }
+    .user-menu-wrapper {
+        background-color: $background;
+        border: 1px solid lighten($background, 10);
+    }
+    .user-menu-link {
+        color: $color;
+        &:hover {
+            font-weight: 500;
+            color: lighten($color, 30);
+        }
+    }
+    .content-loader {
+        background-color: $background;
+    }
+
+    .page-item.disabled {
+        a.page-link {
+            background-color: lighten($background, 10);
+            border-color: lighten($background, 20);;
+        }
+    }
+    .message-list {
+        background-color: darken($background,5);
+    }
+    .form-message {
+        border-top-color: lighten($background,10);
+    }
+
+    .offre-state-wrapper {
+        border-left: 4px solid lighten($background,10);
+    }
+    .compte-plateforme {
+        background-color: lighten($background,10);
+        border-color: lighten($background, 12);
+        &.solde {
+            background-color: rgba(#69f0ae, 0.3);
+            color: $success;
+        }
+        &.retrait {
+            background-color: rgba(#ff3f34, 0.3);
+            color: #cf6a87;
+        }
+        &.action {
+            background-color: transparent;
+        }
+    }
+
+    @media all and (max-width: 768px) {
+        .message-panel {
+            &.center,&.left,&.right {
+                border: 3px solid lighten($background, 10);
+            }
+        }
+    }
+}
